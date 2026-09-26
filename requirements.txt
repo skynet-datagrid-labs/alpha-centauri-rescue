@@ -1,3 +1,9 @@
+pandas 
+numpy 
+matplotlib 
+seaborn 
+scikit-learn
+lightgbm
 
 pandas>=2.0
 numpy>=1.24
