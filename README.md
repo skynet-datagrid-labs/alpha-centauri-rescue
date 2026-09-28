@@ -45,7 +45,9 @@ alternate dimension when the Spaceship Titanic collided with a spacetime anomaly
 ## Submission log
 | Date | Model | CV Score | Public LB | Notes |
 |------|-------|----------|-----------|-------|
-| | | | | |
+|9/28/2026 | CatBoost, XGBoost, and HistGradientBoosting |0.81684 ± 0.01264 |0.80780 |Passenger transport predictions from an ensemble of CatBoost, XGBoost, and HistGradientBoosting models. Models were evaluated using five-fold cross-validation grouped by passenger group to reduce validation leakage. Final predictions use a 0.50 probability threshold. |
+|9/28/2026| HistGradientBoosting, XGBoost | 0.81508 ± 0.01294 | 0.80640|This submission predicts whether each Spaceship Titanic passenger was transported to another dimension. It uses engineered passenger group, cabin, spending, and missing-data features, with an equal-weight blend of HistGradientBoosting, XGBoost, and CatBoost. The blend achieved 0.8147 five-fold cross-validation accuracy at the default threshold. Predictions were generated for all 4,277 test passengers.|
+|          |                              |                    |         |                                             |  
 
 ## Useful links
 - [Competition page](https://www.kaggle.com/competitions/spaceship-titanic)
